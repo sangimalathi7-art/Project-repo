@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me | Sangeetha R</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top bar: back button -->
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <h3 style="color:#ef6900">PORTFOLIO</h3>
+        <a href="index.html" class="btn pri-btn">← Back to Home</a>
+    </div>
+
+    <!-- Hire form -->
+    <section class="container py-5">
+        <h2 class="text-center fw-bold text-white">Hire Me</h2>
+        <p class="text-center text-secondary mb-5">Project details sollunga, naan reply pannuren</p>
+
+        <form action="#" method="POST">
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control py-3" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="email" class="form-control py-3" name="email" placeholder="Email" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <select class="form-select py-3" name="type">
+                        <option selected disabled>Hire for</option>
+                        <option>Full-time job</option>
+                        <option>Internship</option>
+                        <option>Freelance project</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control py-3" name="company" placeholder="Company Name">
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message..." style="resize:none;"></textarea>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn px-5 py-2">Send</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

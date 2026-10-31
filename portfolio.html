@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="style.css">
+       <!-- Bootsrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+   <header class="header sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="home.html" style="color:#ef6900">PORTFOLIO</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Sangeetha-R-Resume.pdf" target="_blank">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+
+        </ul>
+        <a href="hire.html" class="btn pri-btn">Hire me</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+   
+   <section class="container py-5">
+  <h2 class="text-white fw-bold text-center">Portfolio</h2>
+  <p class="text-secondary text-center pb-4">Projects I have built while learning.</p>
+
+  <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn active" data-filter="html">HTML &amp; CSS</button>
+    <button class="filter-btn active" data-filter="bootstrap">Bootstrap</button>
+    <button class="filter-btn active" data-filter="javascript">JavaScript</button>
+  </div>
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-12 col-md-6 col-lg-4 project" data-category="html bootstrap">
+      <div class="project-card h-100">
+        <img src="./Screenshot 2026-10-29 083549.png" alt="Bean Scene coffee landing page">
+        <div class="p-3">
+          <h5>Besnik Landing Page</h5>
+          <p class="text-secondary">Landing page built from a Figma design(Basic Level).</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+           
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 project" data-category="javascript">
+      <div class="project-card h-100">
+        <img src="./Screenshot 2026-10-28 120624.png" alt="Task List app">
+        <div class="p-3">
+          <h5>Task List App</h5>
+          <p class="text-secondary">Add, remove and filter tasks. Saved with localStorage.</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+           
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 project" data-category="bootstrap javascript">
+      <div class="project-card h-100">
+        <img src="./Screenshot 2026-10-29 084148.png" alt="SuperHero Manager 9000">
+        <div class="p-3">
+          <h5>SuperHero Manager 9000</h5>
+          <p class="text-secondary">Object-based JavaScript app with a Bootstrap UI.</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

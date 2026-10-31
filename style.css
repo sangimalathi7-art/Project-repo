@@ -1,0 +1,310 @@
+*{
+box-sizing:border-box;
+}
+
+html, body{
+overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width:100%;
+}
+.header{
+    background-color:black;
+    color: white;
+}
+
+body{
+    background-color: black;
+    margin: 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+/* All Button works */
+.btn{
+    color: white;
+    background-color: #EF6900;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-color: #EF6900;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover, .nav-link.active{
+    color: #EF6900;
+}
+
+/* Introduction */
+.intro{
+    padding:20px;
+    background-color: black;
+    color: white;
+}
+.intro h2{
+    color: #EF6900;
+    font-style: bold;
+    font-size: clamp(28px,8vw,64px);
+    font-weight: 400;
+}
+
+
+
+.photo img{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 85%;
+}
+
+
+
+/* services section */
+
+
+.service-icon{
+    font-size:40px;
+    color:#EF6900
+}
+
+.service-list{
+    padding-left: 18px;
+    color: #ddd;
+    font-size: 15px;
+}
+
+.step-number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EF6900;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.box{
+    border-radius: 10px;
+    background-color:#1a1a1a;
+     color:white;
+    border: 1px solid #333;
+    text-align: justify;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+
+
+.box:hover{
+    border-color: #EF6900;
+    transform:translateY(-5px);
+}
+
+/* About me Section */
+.aboutme{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.aboutme .content p{
+    line-height: 1.5;
+    text-align: center;
+    text-align: justify;
+    color: aliceblue;
+}
+.aboutme .content p:hover{
+    color:#EF6900;
+}
+.aboutme img{
+     width:250px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 85%;
+}
+
+.timeline{
+    width:fit-content;
+    border-left: 2px solid #EF6900;
+    padding-left: 24px;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #EF6900;
+}
+
+.timeline-date{
+    color: #EF6900;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ring Part */
+
+.skills{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.skill{
+    text-align:center;
+    color: #fff;
+}
+
+.ring{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.r1{ background: conic-gradient(#EF6900 0% 90%, #333 90% 100%); }
+.r2{ background: conic-gradient(#EF6900 0% 80%, #333 80% 100%); }
+.r3{ background: conic-gradient(#EF6900 0% 85%, #333 85% 100%); }
+.r4{ background: conic-gradient(#EF6900 0% 70%, #333 70% 100%); }
+
+.ring-inner{
+    width:78px;
+    height:78px;
+    border-radius:50%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.percent{
+color :#ff9f43;
+font-weight: bold;
+margin-top: 10px;
+font-size:18px;
+}
+
+.skill-badge{
+    border: 1px solid #EF6900;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 15px;
+}
+
+/* Portfolio section start */
+
+.pri-btn1{
+    background-color: #0d1f0d;
+    border-color: #807878;
+    color:ghostwhite;
+}
+
+.pri-btn1:hover{
+    background-color:#EF6900;
+    color:ghostwhite;
+}
+
+/* contact section */
+
+.form-control{
+background-color:#1a1f2e;
+color: #fff;
+border: 1px solid #444;
+}
+
+/* Portfolio */
+
+.filter-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #EF6900;
+    border-radius: 50px;
+    padding: 8px 24px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background-color: #EF6900;
+}
+
+.project-card{
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    border-color: #EF6900;
+    transform: translateY(-5px);
+}
+
+.project-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* footer section */
+.site-footer{
+    background-color: #111;
+    border-top: 1px solid #EF6900;
+}
+
+.footer-brand{
+    color: #EF6900;
+    font-weight: bold;
+}
+
+.footer-links a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover{
+    color: #EF6900;
+}
+
+.footer-line{
+    border-color: #333;
+}
+
+.social-icon{
+    color: #fff;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.social-icon:hover{
+    color: #EF6900;
+}
